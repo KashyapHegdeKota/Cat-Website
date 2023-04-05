@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %}Cat Website{% endblock %}</title>
+    <style>
+      /* Style the navigation bar */
+      nav {
+        background-color: #f8f8f8;
+        border-bottom: 1px solid #e7e7e7;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+      }
+
+      /* Style the navigation links */
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      nav ul li {
+        margin: 0 10px;
+      }
+
+      nav ul li a {
+        color: #333;
+        text-decoration: none;
+        font-size: 18px;
+        transition: color 0.2s;
+      }
+
+      nav ul li a:hover {
+        color: #007bff;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="{{ url_for('index') }}">Cat Website</a>
+      </div>
+      <ul>
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('breeds') }}">Breeds</a></li>
+        <li><a href="{{ url_for('behavior') }}">Behavior</a></li>
+        <li><a href="{{ url_for('care') }}">Care</a></li>
+        <li><a href="{{ url_for('products') }}">Products</a></li>
+      </ul>
+    </nav>
+
+    {% block content %} {% endblock %}
+  </body>
+</html>
