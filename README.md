@@ -1,7 +1,7 @@
 # Dynamic Cat Website with Flask and Python #
 This is a dynamic website about cats that is built using Flask and Python. The website has several pages, including a home page, breeds page, behavior page, care page, and products page. The website allows users to learn about different cat breeds, their behavior, and how to care for them. Additionally, users can also browse different cat products.
 
-##Prerequisites##
+##Prerequisites
 *Python 3.x
 *Flask (install using pip install Flask)
 
