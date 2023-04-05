@@ -14,11 +14,11 @@ python app.py
 ```
 4. Open a web browser and go to http://localhost:5000/ to view the home page.
 
-##Files##
-*`app.py`: Contains the Flask application code
-*`templates/`: Contains the HTML templates for the website
+## Files ##
+* ` app.py `: Contains the Flask application code
+* ` templates/ `: Contains the HTML templates for the website
 
-##Author## 
+## Author ## 
 This website was created by Kashyap Hegde Kota as a demonstration of building a dynamic website with Flask and Python.
 
 
